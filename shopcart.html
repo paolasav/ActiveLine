@@ -400,7 +400,22 @@ document.getElementById('plustotal').innerHTML = "$"+ add + " USD";
     document.getelementById('resutlttm').innerHTML="Your order exceed $3000 USD. You must erase some items to be able to continue the purchase."}
     else{
         document.getelementById('resulttm').innerHTML="Click the BUY button to continue the purchase."
-}}
+}
+function search_product() {
+    let searchb = document.getElementById('searchcateg').value;
+    if(searchb == "women"){
+        location.href="women.html";}
+
+        else{
+          location.href="index.html";
+        }
+        if(searchb == "men"){
+      location.href = "men.html";
+    }
+    if(searchb == "accesories"){
+      location.href = "other.html";
+    }
+      }}
            
        </script>
 </body>
