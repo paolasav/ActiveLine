@@ -491,9 +491,7 @@ document.getElementById('plustotal').innerHTML = "$"+ add + " USD";}
 if (add>= 3000){
 document.getElementById('resulttm').innerHTML="Your Order Exceeds $3000 USD limit. You must erase some items from your cart in order to proceed.";}
 else{
-document.getElementById('resulttm').innerHTML="Click the BUY button to continue the purchase.";}
-if (add>= 3000){
- document.getElementByClassName("buybttn").style.display = "none"; }}
+document.getElementById('resulttm').innerHTML="Click the BUY button to continue the purchase.";}}
     
 function search_product() {
     let searchb = document.getElementById('searchcateg').value;
