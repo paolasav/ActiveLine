@@ -297,7 +297,7 @@ color: darkorange; text-decoration: none;
                 </table><br>
                 <button id="res" onclick="total()">TOTAL :</button><h3 id="plustotal"></h3><br>
 <h4 id="resulttm"></h4>
-                <button id="res" onclick="location.href='thx.html'">BUY</button>
+                <button id="res" class="buybttn" onclick="location.href='thx.html'">BUY</button>
         
        </div></center>
        <script>
@@ -489,7 +489,7 @@ document.getElementById('plustotal').innerHTML = "$"+ add + " USD";}
     const elmnt45 = (e45*25);
  const add = (elmnt1+elmnt2+elmnt3+elmnt4+elmnt5+elmnt6+elmnt7+elmnt8+elmnt9+elmnt10+elmnt11+elmnt12+elmnt13+elmnt14+elmnt15+elmnt16+elmnt17+elmnt18+elmnt19+elmnt20+elmnt21+elmnt22+elmnt23+elmnt24+elmnt25+elmnt26+elmnt27+elmnt28+elmnt29+elmnt30+elmnt31+elmnt32+elmnt33+elmnt34+elmnt35+elmnt36+elmnt37+elmnt38+elmnt39+elmnt40+elmnt41+elmnt42+elmnt43+elmnt44+elmnt45);
 if (add>= 3000){
-document.getElementById('resulttm').innerHTML="Your Order Exceeds $3000 USD limit. You must erase some items from your cart in order to proceed.";}
+document.getElementById('resulttm').innerHTML="Your Order Exceeds $3000 USD limit. You must erase some items from your cart in order to proceed."; document.getElementClassName("buybttn").style.display = "none";  }
 else{
 document.getElementById('resulttm').innerHTML="Click the BUY button to continue the purchase.";}}
     
