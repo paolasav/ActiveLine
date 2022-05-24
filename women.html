@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ActiveLine</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        @media screen and (max-width:680px){
+            body{
+                background-color: white;
+            }
+nav{
+  display: none;
+}
+
+img{
+    width: 100%;
+};
+#products{
+    display: inline-table;
+    width: 100%;
+}
+.blackbox{
+display:inline; background-size: cover; background-color: black; text-align: right;
+}
+.space{
+    margin: 5px;
+}
+#feedback{
+    text-align: left;
+}
+.bigcontainer{
+    display: none;
+}
+.bigcontainer2{
+display: block; visibility: visible;
+}
+    .blackbox1{
+        display:block; display:inline;
+    }
+}
+        /*Different Fonts Used in the WEBSITE*/
+        @font-face {
+      font-family:hello ;
+      src: url(Fonts/Hello.otf);
+  }
+  @font-face {
+      font-family: anything;
+      src: url(Fonts/AnythingBetter.otf);
+  }
+  @font-face {
+      font-family:baby;
+      src: url(Fonts/BabyChild.otf);
+  }
+  @font-face {
+      font-family:baligle;
+      src: url(Fonts/BaligleRegular.otf);
+  }
+  @font-face {
+      font-family:butler;
+      src: url(Fonts/Butler_Medium.otf);
+  }
+  @font-face {
+      font-family: roshida;
+      src: url(Fonts/Roshida.otf);
+  }
+  #navigation{
+    text-decoration: none; color: white; outline-color: orange;
+  }
+  /*About Us Text */
+  #aboutus{
+      width:320px; height: 224px; 
+  }
+  /*Bold Letters*/
+  b{
+      font-size: 16px; font-family: Arial, Helvetica, sans-serif; margin-left: 5px; color: white;
+  }
+  #bold1{
+      font-size: 13px; font-family: Arial, Helvetica, sans-serif; margin-left: 3px; color: white;
+  }
+
+  h3{
+      font-size: 20x; font-family: Arial, Helvetica, sans-serif;
+  }
+  /*Navigation Bar*/
+  nav{
+      background-color: black; color: aliceblue; width: 750px; height: 30px; text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 20px; margin-top: 10px;
+  }
+  /*Logo*/
+  #logoal{
+      width: 75px; height: 100px;
+  }
+  /*Photos in The Main Page w Link*/
+  #mainfotos{
+  width: 340; height: 295px; border: 3px solid; text-decoration: none;  color: rgb(0, 0, 0);
+  }
+
+  #blanks{
+      width: 25px; height: 25px;
+  }
+  #blanks1{
+      width: 10px; height: 10px;
+  }
+  #blan{
+      width: 150px; height: 150px;
+  }
+  /*Icons Top Right Corner*/
+  #icons1{
+      width: 30px; height: 30px;
+  }
+  #icons2{
+      width: 30px; height: 30px;
+  }
+  #icons3{
+      width: 30px; height: 30px;
+  }
+  /*Buttons for the Icons*/
+  button{
+      background-color: white; border: none;
+  }
+  /*Search Tab Size*/
+  input{
+      height: 30px;
+  }
+  * {box-sizing:border-box}
+  /*Black Box at the Bottom*/
+.blackbox{
+width: 1275px; height: 200px; background-color: black; color: white; font-family: Arial, Helvetica, sans-serif;
+}
+.space{
+margin: 50px;
+}
+#feedback{
+text-align: left;
+}
+#womennav{
+color: darkorange; text-decoration: none;
+}
+.shopbox{
+    width: 200px; height: 200px; background-color: black;
+}
+.shopbox1{
+    width: 150px; height: 200px; background-color: black;
+}
+#products{
+     width: 125px; height: 100px; margin-top: 15px; margin-left: 35px; margin-right: 10px;
+}
+#products1{
+     width: 100px; height: 100px; margin-top: 15px; margin-left: 25px; margin-right: 10px;
+}
+#price{
+    font-family: Arial, Helvetica, sans-serif; margin-left: 5px; color: darkorange;
+}
+#shopcart{
+    width: 25px; height: 25px;
+}
+.shoppingbox{
+    width: 400px; height: 300px; border: solid black;
+}
+.bigtittle{
+    font-family: Arial, Helvetica, sans-serif; text-decoration: underline darkorange; font-size: 30px;
+}
+#shopspa{
+    font-family:Arial, Helvetica, sans-serif ; font-size: 15px; 
+}
+#shoprice{
+    font-family:Arial, Helvetica, sans-serif ; font-size: 15px;  color: darkorange;
+}
+.boxholder{
+    width: 200px; height: 80px; border: solid black;
+}
+#checkout{
+    width: 100px; height: 20px; background-color: darkorange; border: solid black 2px; font-family: Arial, Helvetica, sans-serif; font-style: bold;
+}
+/*Searchbar CSS*/
+#searchcateg{
+     padding:15px;
+     border-radius: 10px;
+   }
+ 
+   input[type=text] {
+      -webkit-transition: width 0.15s ease-in-out;
+      transition: width 0.15s ease-in-out;
+   }
+#list{
+  display: none;
+}
+.bigcontainer2{
+    display: none;
+    visibility: hidden;
+    }
+    .blackbox1{
+        display: none;
+    }
+</style>
+</head>
+<body>
+    
+    <center><table class="nav">
+        <tr>
+            <td><a href="index.html"><img  id="logoal" src="Images/logoact.png"></a><td></td>
+            <td><nav><a class="space" id="navigation" href="men.html">Men</a><a id="womennav" class="space" href="women.html">Women</a><a id="navigation" class="space" href="other.html">Accesories</a></nav></td>
+            <td> <input type="text" id="searchcateg" name="search" placeholder="Search Categories..."> </input><button onclick="search_product()"><img id="icons2" src="Images/searchic.png"></button></td>
+            <td><button onclick="location.href='shopcart.html'"><img id="icons2" src="Images/bagic.png"></button> <button onclick="location.href='login.html';" value="login" ><img id="icons3" src="Images/personic.png"></button></td></table>
+        </tr>
+
+        <div class="bigcontainer"><table id="rows"><tr>
+        <td><div class="shopbox"><img id="products" src="Images/leggins3.webp"><br><br><b>Pink Biker Shorts</b><br><a href="shopcart.html"><img id="shopcart" src="Images/cartic.png" alt=""></a><a id="price">$15.00 USD</a></div></td>
+        <td><img id="blanks" src="Images/blank.png"></td>
+        <td><div class="shopbox"><img id="products" src="Images/leggins4.jpeg"><br><br><b>Blue Biker Shorts</b><br><a href="shopcart.html"><img id="shopcart" src="Images/cartic.png" alt=""></a><a id="price">$25.00 USD</a></div></td>
+        <td><img id="blanks" src="Images/blank.png"></td>
+        <td><div class="shopbox"><img id="products" src="Images/leggins5.png"><br><br><b>Black Nike Biker Shorts</b><br><a href="shopcart.html"><img id="shopcart" src="Images/cartic.png" alt=""></a><a id="price">$30.00 USD</a></div></td>
+        <td><img id="blanks" src="Images/blank.png"></td>
+        <td><div class="shopbox"><img id="products" src="Images/leggins7.png"><br><br><b>Gray Biker Shorts</b><br><a href="shopcart.html"><img id="shopcart" src="Images/cartic.png" alt=""></a><a id="price">$15.00 USD</a></div></td>
+        <td><img id="blanks" src="Images/blank.png"></td>
+        <td><div class="shopbox"><img id="products" src="Images/leggins8.jpeg"><br><br><b>Black Biker Shorts</b><br><a href="shopcart.html"><img id="shopcart" src="Images/cartic.png" alt=""></a><a id="price">$20.00 USD</a></div></td></tr></table>
+        <br>
+    
+    <table id="rows"><tr>
+    <td><div class="shopbox"><img id="products" src="Images/sneakers1.png"><br><br><b>Black Sporty Set</b><br><a href="shopcart.html"><img id="shopcart" src="Images/cartic.png" alt=""></a><a id="price">$75.00 USD</a></div></td>
+    <td><img id="blanks" src="Images/blank.png"></td>
+    <td><div class="shopbox"><img id="products" src="Images/sneakers2.png"><br><br><b>Black Running Sneakers</b><br><a href="shopcart.html"><img id="shopcart" src="Images/cartic.png" alt=""></a><a id="price">$95.00 USD</a></div></td>
+    <td><img id="blanks" src="Images/blank.png"></td>
+    <td><div class="shopbox"><img id="products" src="Images/sneakers3.png"><br><br><b>Black Adidas Sneakers</b><br><a href="shopcart.html"><img id="shopcart" src="Images/cartic.png" alt=""></a><a id="price">$85.00 USD</a></div></td>
+    <td><img id="blanks" src="Images/blank.png"></td>
+    <td><div class="shopbox"><img id="products" src="Images/sneakers4.png"><br><br><b>White Adidas Sneakers</b><br><a href="shopcart.html"><img id="shopcart" src="Images/cartic.png" alt=""></a><a id="price">$80.00 USD</a></div></td>
+    <td><img id="blanks" src="Images/blank.png"></td>
+    <td><div class="shopbox"><img id="products" src="Images/sweater2.png"><br><br><b>Black Adidas Sweater</b><br><a href="shopcart.html"><img id="shopcart" src="Images/cartic.png" alt=""></a><a id="price">$60.00 USD</a></div></td></tr></table>
+    <br>
+
+    <table id="rows"><tr>
+        <td><div class="shopbox"><img id="products" src="Images/sweater1.png"><br><br><b>Black Sweater</b><br><a href="shopcart.html"><img id="shopcart" src="Images/cartic.png" alt=""></a><a id="price">$45.00 USD</a></div></td>
+        <td><img id="blanks" src="Images/blank.png"></td>
+        <td><div class="shopbox"><img id="products" src="Images/set1.png"><br><br><b>Nike Gym Set</b><br><a href="shopcart.html"><img id="shopcart" src="Images/cartic.png" alt=""></a><a id="price">$115.00 USD</a></div></td>
+        <td><img id="blanks" src="Images/blank.png"></td>
+        <td><div class="shopbox"><img id="products" src="Images/sweater3.png"><br><br><b>Black Adidas Hoodie</b><br><a href="shopcart.html"><img id="shopcart" src="Images/cartic.png" alt=""></a><a id="price">$50.00 USD</a></div></td>
+        <td><img id="blanks" src="Images/blank.png"></td>
+        <td><div class="shopbox"><img id="products" src="Images/tshirt1.png"><br><br><b>Nike Black T-Shirt</b><br><a href="shopcart.html"><img id="shopcart" src="Images/cartic.png" alt=""></a><a id="price">$25.00 USD</a></div></td>
+        <td><img id="blanks" src="Images/blank.png"></td>
+        <td><div class="shopbox"><img id="products" src="Images/tshirt2.png"><br><br><b>Nike Black T-Shirt</b><br><a href="shopcart.html"><img id="shopcart" src="Images/cartic.png" alt=""></a><a id="price">$20.00 USD</a></div></td>
+      </tr></table></div>
+        <br><br>
+        <div class="bigcontainer2"><table id="rows"><tr>
+            <td><div class="shopbox1"><img id="products1" src="Images/leggins3.webp"><br><br><b id="bold1">Pink Biker Shorts</b><br><a href="shopcart.html"><img id="shopcart" src="Images/cartic.png" alt=""></a><a id="price">$15.00 USD</a></div></td>
+            <td><img id="blanks1" src="Images/blank.png"></td>
+            <td><div class="shopbox1"><img id="products1" src="Images/leggins4.jpeg"><br><br><b id="bold1">Blue Biker Shorts</b><br><a href="shopcart.html"><img id="shopcart" src="Images/cartic.png" alt=""></a><a id="price">$25.00 USD</a></div></td>
+            <td><img id="blanks1" src="Images/blank.png"></td>
+            <td><div class="shopbox1"><img id="products1" src="Images/leggins5.png"><br><br><b id="bold1">Black Nike Biker Shorts</b><br><a href="shopcart.html"><img id="shopcart" src="Images/cartic.png" alt=""></a><a id="price">$30.00 USD</a></div></td></tr></table><br>
+           
+            <tr><td><div class="shopbox1"><img id="products1" src="Images/leggins7.png"><br><br><b id="bold1">Gray Biker Shorts</b><br><a href="shopcart.html"><img id="shopcart" src="Images/cartic.png" alt=""></a><a id="price">$15.00 USD</a></div></td>
+            <td><img id="blanks1" src="Images/blank.png"></td>
+            <td><div class="shopbox1"><img id="products1" src="Images/leggins8.jpeg"><br><br><b id="bold1">Black Biker Shorts</b><br><a href="shopcart.html"><img id="shopcart" src="Images/cartic.png" alt=""></a><a id="price">$20.00 USD</a></div></td>
+            <td><img id="blanks1" src="Images/blank.png"></td>
+            <td><div class="shopbox1"><img id="products1" src="Images/sneakers1.png"><br><br><b id="bold1">Black Sporty Set</b><br><a href="shopcart.html"><img id="shopcart" src="Images/cartic.png" alt=""></a><a id="price">$75.00 USD</a></div></td></tr></table><br>
+        
+           
+            <td><div class="shopbox1"><img id="products1" src="Images/sneakers2.png"><br><br><b id="bold1">Black Running Sneakers</b><br><a href="shopcart.html"><img id="shopcart" src="Images/cartic.png" alt=""></a><a id="price">$95.00 USD</a></div></td>
+            <td><img id="blanks1" src="Images/blank.png"></td>
+            <td><div class="shopbox1"><img id="products1" src="Images/sneakers3.png"><br><br><b id="bold1">Black Adidas Sneakers</b><br><a href="shopcart.html"><img id="shopcart" src="Images/cartic.png" alt=""></a><a id="price">$85.00 USD</a></div></td>
+            <td><img id="blanks1" src="Images/blank.png"></td>
+            <td><div class="shopbox1"><img id="products1" src="Images/sneakers4.png"><br><br><b id="bold1">White Adidas Sneakers</b><br><a href="shopcart.html"><img id="shopcart" src="Images/cartic.png" alt=""></a><a id="price">$80.00 USD</a></div></td></tr></table><br>
+                
+           
+            <td><div class="shopbox1"><img id="products1" src="Images/sweater2.png"><br><br><b id="bold1">Black Adidas Sweater</b><br><a href="shopcart.html"><img id="shopcart" src="Images/cartic.png" alt=""></a><a id="price">$60.00 USD</a></div></td>
+            <td><img id="blanks1" src="Images/blank.png"></td>
+            <td><div class="shopbox1"><img id="products1" src="Images/sweater1.png"><br><br><b id="bold1">Black Sweater</b><br><a href="shopcart.html"><img id="shopcart" src="Images/cartic.png" alt=""></a><a id="price">$45.00 USD</a></div></td>
+            <td><img id="blanks1" src="Images/blank.png"></td>
+            <td><div class="shopbox1"><img id="products1" src="Images/set1.png"><br><br><b id="bold1">Nike Gym Set</b><br><a href="shopcart.html"><img id="shopcart" src="Images/cartic.png" alt=""></a><a id="price">$115.00 USD</a></div></td></tr></table><br>
+    
+        
+            
+            <td><div class="shopbox1"><img id="products1" src="Images/sweater3.png"><br><br><b id="bold1">Black Adidas Hoodie</b><br><a href="shopcart.html"><img id="shopcart" src="Images/cartic.png" alt=""></a><a id="price">$50.00 USD</a></div></td>
+            <td><img id="blanks1" src="Images/blank.png"></td>
+            <td><div class="shopbox1"><img id="products1" src="Images/tshirt1.png"><br><br><b id="bold1">Nike Black T-Shirt</b><br><a href="shopcart.html"><img id="shopcart" src="Images/cartic.png" alt=""></a><a id="price">$25.00 USD</a></div></td>
+            <td><img id="blanks1" src="Images/blank.png"></td>
+            <td><div class="shopbox1"><img id="products1" src="Images/tshirt2.png"><br><br><b id="bold1">Nike Black T-Shirt</b><br><a href="shopcart.html"><img id="shopcart" src="Images/cartic.png" alt=""></a><a id="price">$20.00 USD</a></div></td>
+          </tr></table></div>
+                <br>
+                <div class="blackbox">
+                    <tr>
+                      <td><br><p>ActiveLine Privacy Policy <a class="space"> </a> Copyright® owned by ActiveLine 2022 <a class="space"> </a> Based in the Dominican Republic</p></td>
+                      <td><p id="feedback"><a class="space"></a><a class="space"></a>Send us feedback</p></td>
+                      <td><a id="navigation" class="space" href="men.html">Menwear</a><a  id="womennav"  class="space"href="women.html">Womenwear</a><a id="navigation" class="space"href="other.html">Accesories</a></td>
+                    </tr>
+                    </div>
+        
+            </center>
+                <script>
+                    function search_product() {
+    let searchb = document.getElementById('searchcateg').value;
+    if(searchb == "women"){
+        location.href="women.html";}
+
+        else{
+          location.href="index.html";
+        }
+        if(searchb == "men"){
+      location.href = "men.html";
+    }
+    if(searchb == "accesories"){
+      location.href = "other.html";
+    }
+      }
+                
+                </script>
+</body>
+</html>
