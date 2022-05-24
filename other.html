@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ActiveLine</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+         @media screen and (max-width:600px){
+nav{
+  display: none;
+}
+#rows{
+    display:inline;
+}
+#products{
+    display: inline-table;
+}
+.blackbox{
+display:inline; background-size: cover; background-color: black; text-align: right;
+}
+.space{
+    margin: 5px;
+}
+#feedback{
+    text-align: left;
+}
+.bigcontainer{
+    display: none;
+}
+.bigcontainer2{
+    display: block;}
+    .blackbox1{
+        display:block; display:inline;
+    }
+}
+        /*Different Fonts Used in the WEBSITE*/
+        @font-face {
+      font-family:hello ;
+      src: url(Fonts/Hello.otf);
+  }
+  @font-face {
+      font-family: anything;
+      src: url(Fonts/AnythingBetter.otf);
+  }
+  @font-face {
+      font-family:baby;
+      src: url(Fonts/BabyChild.otf);
+  }
+  @font-face {
+      font-family:baligle;
+      src: url(Fonts/BaligleRegular.otf);
+  }
+  @font-face {
+      font-family:butler;
+      src: url(Fonts/Butler_Medium.otf);
+  }
+  @font-face {
+      font-family: roshida;
+      src: url(Fonts/Roshida.otf);
+  }
+  #navigation{
+    text-decoration: none; color: white; outline-color: orange;
+  }
+  /*About Us Text */
+  #aboutus{
+      width:320px; height: 224px; 
+  }
+  /*Bold Letters*/
+  b{
+      font-size: 16px; font-family: Arial, Helvetica, sans-serif;
+  }
+
+  h3{
+      font-size: 20x; font-family: Arial, Helvetica, sans-serif;
+  }
+  /*Navigation Bar*/
+  nav{
+      background-color: black; color: aliceblue; width: 750px; height: 30px; text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 20px; margin-top: 10px;
+  }
+  /*Logo*/
+  #logoal{
+      width: 75px; height: 100px;
+  }
+  /*Photos in The Main Page w Link*/
+  #mainfotos{
+  width: 340; height: 295px; border: 3px solid; text-decoration: none;  color: rgb(0, 0, 0);
+  }
+
+  #blanks{
+      width: 25px; height: 25px;
+  }
+  #blan{
+      width: 150px; height: 150px;
+  }
+  /*Icons Top Right Corner*/
+  #icons1{
+      width: 30px; height: 30px;
+  }
+  #icons2{
+      width: 30px; height: 30px;
+  }
+  #icons3{
+      width: 30px; height: 30px;
+  }
+  /*Buttons for the Icons*/
+  button{
+      background-color: white; border: none;
+  }
+  /*Search Tab Size*/
+  input{
+      height: 30px;
+  }
+  * {box-sizing:border-box}
+  /*Black Box at the Bottom*/
+.blackbox{
+width: 1275px; height: 200px; background-color: black; color: white; font-family: Arial, Helvetica, sans-serif;
+}
+.space{
+margin: 50px;
+}
+.shopbox1{
+    width: 150px; height: 200px; background-color: black;
+}
+#products1{
+     width: 100px; height: 100px; margin-top: 15px; margin-left: 25px; margin-right: 10px;
+}
+
+#feedback{
+text-align: left;
+}
+#othersnav{
+color: darkorange; text-decoration: none;
+}
+b{
+      font-size: 16px; font-family: Arial, Helvetica, sans-serif; margin-left: 5px; color: white;
+  }
+  #blanks{
+      width: 25px; height: 25px;
+  }
+  #blan{
+      width: 150px; height: 150px;}
+      .shopbox{
+    width: 200px; height: 200px; background-color: black;
+}
+.products{
+     width: 125px; height: 100px; margin-top: 15px; margin-left: 35px; margin-right: 10px;
+}
+
+#price{
+    font-family: Arial, Helvetica, sans-serif; margin-left: 5px; color: darkorange;
+}
+#shopcart{
+    width: 25px; height: 25px;
+}
+#searchcateg{
+     padding:15px;
+     border-radius: 10px;
+   }
+ 
+   input[type=text] {
+      -webkit-transition: width 0.15s ease-in-out;
+      transition: width 0.15s ease-in-out;
+   }
+#list{
+  display: none;
+}
+.bigcontainer2{
+    display:none;
+    }
+    .blackbox1{
+        display: none;
+    }
+</style>
+</head>
+<body>
+    <center><table>
+        <tr>
+            <td><a href="index.html"><img  id="logoal" src="logoact.png"></a><td></td>
+            <td><nav><a class="space" id="navigation" href="men.html">Men</a><a id="navigation" class="space" href="women.html">Women</a><a id="othersnav" class="space" href="other.html">Accesories</a></nav></td>
+            <td><input type="text" id="searchcateg" name="search" placeholder="Search Categories..."> </input><button onclick="search_product()"><img id="icons2" src="searchic.png"></button></td>
+            <td><button onclick="location.href='shopcart.html'"><img id="icons2" src="bagic.png"></button> <button onclick="location.href='login.html';" value="login" ><img id="icons3" src="personic.png"></button></td></table>
+        </tr>
+        <div class="bigcontainer"><table id="rows"><tr>
+            <td><div class="shopbox"><img class="products" src="other1.jpeg"><br><br><b>Weight Option 1</b><br><a href="shopcart.html"><img id="shopcart" src="cartic.png" alt=""></a><a id="price">$20.00 USD</a></div></td>
+            <td><img id="blanks" src="blank.png"></td>
+            <td><div class="shopbox"><img class="products" src="other2.jpg"><br><br><b>Weight Option 2</b><br><a href="shopcart.html"><img id="shopcart" src="cartic.png" alt=""></a><a id="price">$20.00 USD</a></div></td>
+            <td><img id="blanks" src="blank.png"></td>
+            <td><div class="shopbox"><img class="products" src="other3.jpg"><br><br><b>Weight Option 3</b><br><a href="shopcart.html"><img id="shopcart" src="cartic.png" alt=""></a><a id="price">$30.00 USD</a></div></td>
+            <td><img id="blanks" src="blank.png"></td>
+            <td><div class="shopbox"><img class="products" src="other4.jpeg"><br><br><b>Weight Option 4</b><br><a href="shopcart.html"><img id="shopcart" src="cartic.png" alt=""></a><a id="price">$20.00 USD</a></div></td>
+            <td><img id="blanks" src="blank.png"></td>
+            <td><div class="shopbox"><img class="products" src="other5.jpeg"><br><br><b>Weight Option 5</b><br><a href="shopcart.html"><img id="shopcart" src="cartic.png" alt=""></a><a id="price">$30.00 USD</a></div></td></tr></table>
+            <br>
+        
+        <table id="rows"><tr>
+        <td><div class="shopbox"><img class="products" src="other6.jpeg"><br><br><b>Weight Option 6</b><br><a href="shopcart.html"><img id="shopcart" src="cartic.png" alt=""></a><a id="price">$40.00 USD</a></div></td>
+        <td><img id="blanks" src="blank.png"></td>
+        <td><div class="shopbox"><img class="products" src="other7.jpeg"><br><br><b>Weight Option 7</b><br><a href="shopcart.html"><img id="shopcart" src="cartic.png" alt=""></a><a id="price">30.00 USD</a></div></td>
+        <td><img id="blanks" src="blank.png"></td>
+        <td><div class="shopbox"><img class="products" src="other8.jpeg"><br><br><b>Weight Option 8</b><br><a href="shopcart.html"><img id="shopcart" src="cartic.png" alt=""></a><a id="price">$20.00 USD</a></div></td>
+        <td><img id="blanks" src="blank.png"></td>
+        <td><div class="shopbox"><img class="products" src="other9.png"><br><br><b>Weight Option 9</b><br><a href="shopcart.html"><img id="shopcart" src="cartic.png" alt=""></a><a id="price">$30.00 USD</a></div></td>
+        <td><img id="blanks" src="blank.png"></td>
+        <td><div class="shopbox"><img class="products" src="other10.jpg"><br><br><b>Soccer Ball</b><br><a href="shopcart.html"><img id="shopcart" src="cartic.png" alt=""></a><a id="price">$30.00 USD</a></div></td></tr></table>
+        <br>
+    
+        <table id="rows"><tr>
+            <td><div class="shopbox"><img class="products" src="other11.jpg"><br><br><b>Tenis Ball</b><br><a href="shopcart.html"><img id="shopcart" src="cartic.png" alt=""></a><a id="price">$15.00 USD</a></div></td>
+            <td><img id="blanks" src="blank.png"></td>
+            <td><div class="shopbox"><img class="products" src="other12.webp"><br><br><b>Yoga Purple Mat</b><br><a href="shopcart.html"><img id="shopcart" src="cartic.png" alt=""></a><a id="price">$25.00 USD</a></div></td>
+            <td><img id="blanks" src="blank.png"></td>
+            <td><div class="shopbox"><img class="products" src="other13.jpeg"><br><br><b>Yoga Green Mat</b><br><a href="shopcart.html"><img id="shopcart" src="cartic.png" alt=""></a><a id="price">$25.00 USD</a></div></td>
+            <td><img id="blanks" src="blank.png"></td>
+            <td><div class="shopbox"><img class="products" src="other14.jpg"><br><br><b>Yoga Blue Mat</b><br><a href="shopcart.html"><img id="shopcart" src="cartic.png" alt=""></a><a id="price">$25.00 USD</a></div></td>
+            <td><img id="blanks" src="blank.png"></td>
+            <td><div class="shopbox"><img class="products" src="other15.jpeg"><br><br><b>Yoga Orange Mat</b><br><a href="shopcart.html"><img id="shopcart" src="cartic.png" alt=""></a><a id="price">$25.00 USD</a></div></td>
+          </tr></table></div>
+            <br><br>
+    <div class="bigcontainer2">
+        <table id="rows"><tr>
+            <td><div class="shopbox"><img class="products" src="other1.jpeg"><br><br><b>Weight Option 1</b><br><a href="shopcart.html"><img id="shopcart" src="cartic.png" alt=""></a><a id="price">$20.00 USD</a></div></td>
+            <td><img id="blanks" src="blank.png"></td>
+            <td><div class="shopbox"><img class="products" src="other2.jpg"><br><br><b>Weight Option 2</b><br><a href="shopcart.html"><img id="shopcart" src="cartic.png" alt=""></a><a id="price">$20.00 USD</a></div></td>
+            <td><img id="blanks" src="blank.png"></td>
+            <td><div class="shopbox"><img class="products" src="other3.jpg"><br><br><b>Weight Option 3</b><br><a href="shopcart.html"><img id="shopcart" src="cartic.png" alt=""></a><a id="price">$30.00 USD</a></div></td></tr></table>
+            <table id="rows"><tr>
+            <td><div class="shopbox"><img class="products" src="other4.jpeg"><br><br><b>Weight Option 4</b><br><a href="shopcart.html"><img id="shopcart" src="cartic.png" alt=""></a><a id="price">$20.00 USD</a></div></td>
+            <td><img id="blanks" src="blank.png"></td>
+            <td><div class="shopbox"><img class="products" src="other5.jpeg"><br><br><b>Weight Option 5</b><br><a href="shopcart.html"><img id="shopcart" src="cartic.png" alt=""></a><a id="price">$30.00 USD</a></div></td>
+            <td><img id="blanks" src="blank.png"></td>
+            <td><div class="shopbox"><img class="products" src="other6.jpeg"><br><br><b>Weight Option 6</b><br><a href="shopcart.html"><img id="shopcart" src="cartic.png" alt=""></a><a id="price">$40.00 USD</a></div></td></tr></table>
+            <br>
+            <table id="rows"><tr>
+            <td><div class="shopbox"><img class="products" src="other7.jpeg"><br><br><b>Weight Option 7</b><br><a href="shopcart.html"><img id="shopcart" src="cartic.png" alt=""></a><a id="price">30.00 USD</a></div></td>
+            <td><img id="blanks" src="blank.png"></td>
+            <td><div class="shopbox"><img class="products" src="other8.jpeg"><br><br><b>Weight Option 8</b><br><a href="shopcart.html"><img id="shopcart" src="cartic.png" alt=""></a><a id="price">$20.00 USD</a></div></td>
+            <td><img id="blanks" src="blank.png"></td>
+            <td><div class="shopbox"><img class="products" src="other9.png"><br><br><b>Weight Option 9</b><br><a href="shopcart.html"><img id="shopcart" src="cartic.png" alt=""></a><a id="price">$30.00 USD</a></div></td></tr></table>
+            <table id="rows"><tr>
+            <td><div class="shopbox"><img class="products" src="other11.jpg"><br><br><b>Tenis Ball</b><br><a href="shopcart.html"><img id="shopcart" src="cartic.png" alt=""></a><a id="price">$15.00 USD</a></div></td>
+            <td><img id="blanks" src="blank.png"></td>
+            <td><div class="shopbox"><img class="products" src="other10.jpg"><br><br><b>Soccer Ball</b><br><a href="shopcart.html"><img id="shopcart" src="cartic.png" alt=""></a><a id="price">$30.00 USD</a></div></td>
+            <td><img id="blanks" src="blank.png"></td>
+            <td><div class="shopbox"><img class="products" src="other12.webp"><br><br><b>Yoga Purple Mat</b><br><a href="shopcart.html"><img id="shopcart" src="cartic.png" alt=""></a><a id="price">$25.00 USD</a></div></td></tr></table>
+             <br>
+            <table id="rows"><tr>
+            <td><div class="shopbox"><img class="products" src="other13.jpeg"><br><br><b>Yoga Green Mat</b><br><a href="shopcart.html"><img id="shopcart" src="cartic.png" alt=""></a><a id="price">$25.00 USD</a></div></td>
+            <td><img id="blanks" src="blank.png"></td>
+            <td><div class="shopbox"><img class="products" src="other14.jpg"><br><br><b>Yoga Blue Mat</b><br><a href="shopcart.html"><img id="shopcart" src="cartic.png" alt=""></a><a id="price">$25.00 USD</a></div></td>
+            <td><img id="blanks" src="blank.png"></td>
+            <td><div class="shopbox"><img class="products" src="other15.jpeg"><br><br><b>Yoga Orange Mat</b><br><a href="shopcart.html"><img id="shopcart" src="cartic.png" alt=""></a><a id="price">$25.00 USD</a></div></td>
+          </tr></table>
+            <br><br>
+    </div>
+    
+                    <br>
+            <div class="blackbox">
+                <tr>
+                  <td><br><p>ActiveLine Privacy Policy <a class="space"> </a> Copyright® owned by ActiveLine 2022 <a class="space"> </a> Based in the Dominican Republic</p></td>
+                  <td><p id="feedback"><a class="space"></a><a class="space"></a>Send us feedback</p></td>
+                  <td><a id="navigation" class="space" href="men.html">Menwear</a><a id="navigation" class="space"href="women.html">Womenwear</a><a id="othersnav" class="space"href="other.html">Accesories</a></td>
+                  
+                </tr>
+                </div>
+                <script>
+                                        function search_product() {
+    let searchb = document.getElementById('searchcateg').value;
+    if(searchb == "women"){
+        location.href="women.html";}
+
+        else{
+          location.href="index.html";
+        }
+        if(searchb == "men"){
+      location.href = "men.html";
+    }
+    if(searchb == "accesories"){
+      location.href = "other.html";
+    }
+      }
+         
+                </script>
+</body>
+</html>

@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ActiveLine</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+                @media screen and (max-width:600px){
+nav{
+  display: none;
+}
+#rows{
+    display:inline;
+}
+#products{
+    display: inline-table;
+}
+.blackbox{
+display:inline; background-size: cover; background-color: black; text-align: right;
+}
+.space{
+    margin: 5px;
+}
+#feedback{
+    text-align: left;
+}
+.bigcontainer{
+    display: none;
+}
+.bigcontainer2{
+    display: block;}
+    .blackbox1{
+        display:block; display:inline;
+    }
+    .shoppingbox{display: inline;}
+}
+  #navigation{
+    text-decoration: none; color: white; outline-color: orange;
+  }
+  /*About Us Text */
+  #aboutus{
+      width:320px; height: 224px; 
+  }
+  /*Bold Letters*/
+  b{
+      font-size: 16px; font-family: Arial, Helvetica, sans-serif; margin-left: 5px; color: white;
+  }
+
+  h3{
+      font-size: 20x; font-family: Arial, Helvetica, sans-serif;
+  }
+  /*Navigation Bar*/
+  nav{
+      background-color: black; color: aliceblue; width: 750px; height: 30px; text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 20px; margin-top: 10px;
+  }
+  /*Logo*/
+  #logoal{
+      width: 75px; height: 100px;
+  }
+  /*Photos in The Main Page w Link*/
+  #mainfotos{
+  width: 340; height: 295px; border: 3px solid; text-decoration: none;  color: rgb(0, 0, 0);
+  }
+
+  #blanks{
+      width: 1px; height: 25px;
+  }
+  #blan{
+      width: 150px; height: 150px;
+  }
+  /*Icons Top Right Corner*/
+  #icons1{
+      width: 30px; height: 30px;
+  }
+  #icons2{
+      width: 30px; height: 30px;
+  }
+  #icons3{
+      width: 30px; height: 30px;
+  }
+  /*Buttons for the Icons*/
+  button{
+      background-color: white; border: none;
+  }
+  /*Search Tab Size*/
+  input{
+      height: 30px;
+  }
+  * {box-sizing:border-box}
+  /*Black Box at the Bottom*/
+.blackbox{
+width: 1275px; height: 200px; background-color: black; color: white; font-family: Arial, Helvetica, sans-serif;
+}
+.space{
+margin: 50px;
+}
+#feedback{
+text-align: left;
+}
+#womennav{
+color: darkorange; text-decoration: none;
+}
+.shopbox{
+    width: 210px; height: 200px; background-color: black;
+}
+.products{
+     width: 100px; height: 100px; margin-top: 15px; margin-left: 35px; margin-right: 10px;
+}
+
+#price{
+    font-family: Arial, Helvetica, sans-serif; margin-left: 5px; color: darkorange;
+}
+#shopcart{
+    width: 25px; height: 25px;
+}
+.shoppingbox{
+    width: 400px; height: 300px; border: solid black;
+}
+.bigtittle{
+    font-family: Arial, Helvetica, sans-serif; text-decoration: underline darkorange; font-size: 30px;
+}
+#shopspa{
+    font-family:Arial, Helvetica, sans-serif ; font-size: 15px; 
+}
+#shoprice{
+    font-family:Arial, Helvetica, sans-serif ; font-size: 15px;  color: darkorange;
+}
+.boxholder{
+    width: 200px; height: 80px; border: solid black;
+}
+#checkout{
+    width: 100px; height: 20px; background-color: darkorange; border: solid black 2px; font-family: Arial, Helvetica, sans-serif; font-style: bold;
+}
+        .shoppingbox{
+    width: 600px; height: 3700px; border: solid black;
+}
+.bigtittle{
+    font-family: Arial, Helvetica, sans-serif; text-decoration: underline darkorange; font-size: 30px;}
+
+    #searchcateg{
+     padding:15px;
+     border-radius: 10px;
+   }
+ 
+   input[type=text] {
+      -webkit-transition: width 0.15s ease-in-out;
+      transition: width 0.15s ease-in-out;
+   }
+#list{
+  display: none;
+}
+.qty{
+    width: 35px; height: 20px; margin-left: 5px;
+}
+.container{
+    width: 350px; height: 1800px; border: solid black 2px;
+}
+.container2{
+    width:350px; height: 200px; background-color: black;
+}
+.shopbox{
+    width: 183px; height: 200px; background-color: black; border:solid darkorange;}
+    #category{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #res{
+        background-color: darkorange; border: solid black; width: 80px; height: 20px; font-family: Arial, Helvetica, sans-serif; font-style: bold; font-size: 15px;
+    }
+    </style>
+
+</head>
+<body>
+    <center><table>
+        <tr>
+            <td><a href="index.html"><img  id="logoal" src="logoact.png"></a><td></td>
+            <td><nav><a class="space" id="navigation" href="men.html">Men</a><a id="navigation" class="space" href="women.html">Women</a><a id="navigation" class="space" href="other.html">Accesories</a></nav></td>
+            <td> <input type="text" id="searchcateg" name="search" placeholder="Search Categories..."> </input><button onclick="search_product()"><img id="icons2" src="searchic.png"></button></td>
+            <td><button onclick="location.href='shopcart.html'"><img id="icons2" src="bagic.png"></button> <button onclick="location.href='login.html';" value="login" ><img id="icons3" src="personic.png"></button></td></table>
+        </tr>
+    <br>
+        <div class="shoppingbox">
+            <table>
+                <br>
+            <h1 class="bigtittle">Shopping Cart</h1>
+                    <td><h2 id="category">Men</h2></td>
+                    <tr>
+                    <td><div class="shopbox"><img class="products" src="sneakersm2.webp"><br><br><b>Adidas Run Sneakers</b><br><input class="qty" type="number" value="0" id="element23"></input><a id="price">$75.00 USD</a></div></td>
+                    <td><img id="blanks" src="blank.png"></td>
+                    <td><div class="shopbox"><img class="products" src="hoodie2.jpg"><br><br><b>Black Hoodie</b><br><input class="qty" type="number" value="0" id="element2"></input><a id="price">$55.00 USD</a></div></td>
+                    <td><img id="blanks" src="blank.png"></td>
+                    <td><div class="shopbox"><img class="products" src="tshirtm1.jpg"><br><br><b>Green Nike T-Shirt</b><br><input class="qty" type="number" value="0" id="element3"></input><a id="price">$25.00 USD</a></div></td>
+                </tr><br>
+                    <tr>
+                    <td><div class="shopbox"><img class="products" src="hoodie4.jpg"><br><br><b>Red Nike Hoodie</b><br><input class="qty" type="number" value="0" id="element4"></input><a id="price">$65.00 USD</a></div></td>
+                    <td><img id="blanks" src="blank.png"></td>
+                    <td><div class="shopbox"><img class="products" src="hoodie3.jpg"><br><br><b>Blue Nike Hoodie</b><br><input class="qty" type="number" value="0" id="element5"></input><a id="price">$63.00 USD</a></div></td>
+                    <td><img id="blanks" src="blank.png"></td>
+                    <td><div class="shopbox"><img class="products" src="tshirtm2.jpg"><br><br><b>Red Nike T-Shirt</b><br><input class="qty" type="number" value="0" id="element6"></input><a id="price">$30.00 USD</a></div></td>
+                    </tr><br>
+                    <tr>
+                    <td><div class="shopbox"><img class="products" src="hoodie5.jpg"><br><br><b>Orange Nike Hoodie</b><br><input class="qty" type="number" value="0" id="element7"></input><a id="price">$50.00 USD</a></div></td>
+                    <td><img id="blanks" src="blank.png"></td>
+                    <td><div class="shopbox"><img class="products" src="hoodie6.jpg"><br><br><b>Orange Nike Hoodie</b><br><input class="qty" type="number" value="0" id="element8"></input><a id="price">$70.00 USD</a></div></td>
+                    <td><img id="blanks" src="blank.png"></td>
+                    <td><div class="shopbox"><img class="products" src="tshirtm3.jpg"><br><br><b>Blue Nike T-Shirt</b><br><input class="qty" type="number" value="0" id="element9"></input><a id="price">$25.00 USD</a></div></td>
+                    </tr><br>
+                    <tr>
+                    <td><div class="shopbox"><img class="products" src="hoodie7.jpg"><br><br><b>Red Adidas Hoodie</b><br><input class="qty" type="number" value="0" id="element10"></input><a id="price">$80.00 USD</a></div></td>
+                    <td><img id="blanks" src="blank.png"></td>
+                    <td><div class="shopbox"><img class="products" src="hoodie8.jpg"><br><br><b>Blue Nike Hoodie</b><br><input class="qty" type="number" value="0" id="element11"></input><a id="price">$45.00 USD</a></div></td>
+                    <td><img id="blanks" src="blank.png"></td>
+                    <td><div class="shopbox"><img class="products" src="tshirtm4.webp"><br><br><b>Pink Nike T-Shirt</b><br><input class="qty" type="number" value="0" id="element12"></input><a id="price">$20.00 USD</a></div></td>
+                    </tr>
+                    <tr>
+                    <td><div class="shopbox"><img class="products" src="tshirtm5.webp"><br><br><b>Red Nike T-Shirt</b><br><input class="qty" type="number" value="0" id="element13"></input><a id="price">$25.00 USD</a></div></td>
+                    <td><img id="blanks" src="blank.png"></td>
+                    <td><div class="shopbox"><img class="products" src="sneakersm1.webp"><br><br><b>Adidas Sneakers</b><br><input class="qty" type="number" value="0" id="element14"></input><a id="price">$85.00 USD</a></div></td>
+                    <td><img id="blanks" src="blank.png"></td>
+                    <td><div class="shopbox"><img class="products" src="hoodie1.jpg"><br><br><b>Pink Hoodie</b><br><input class="qty" type="number" value="0" id="element24"></input><a id="price">$60.00 USD</a></div></td>
+                    </tr>
+                    <td><h2 id="category">Women</h2></td>
+                    <tr>
+                    <td><div class="shopbox"><img class="products" src="leggins3.webp"><br><br><b>Pink Biker Shorts</b><br><input class="qty" type="number" value="0" id="element1"></input><a id="price">$15.00 USD</a></div></td>
+                    <td><img id="blanks" src="blank.png"></td>
+                    <td><div class="shopbox"><img class="products" src="leggins4.jpeg"><br><br><b>Blue Biker Shorts</b><br><input class="qty" type="number" value="0" id="element15"></input><a id="price">$25.00 USD</a></div></td>
+                    <td><img id="blanks" src="blank.png"></td>
+                    <td><div class="shopbox"><img class="products" src="leggins5.png"><br><br><b>Black Nike Shorts</b><br><input class="qty" type="number" value="0" id="element16"></input><a id="price">$30.00 USD</a></div></td>
+                </tr><br>
+                <tr>
+                    <td><div class="shopbox"><img class="products" src="leggins7.png"><br><br><b>Gray Biker Shorts</b><br><input class="qty" type="number" value="0" id="element17"></input><a id="price">$15.00 USD</a></div></td>
+                    <td><img id="blanks" src="blank.png"></td>
+                    <td><div class="shopbox"><img class="products" src="leggins8.jpeg"><br><br><b>Black Biker Shorts</b><br><input class="qty" type="number" value="0" id="element18"></input><a id="price">$20.00 USD</a></div></td>
+                    <td><img id="blanks" src="blank.png"></td>
+                    <td><div class="shopbox"><img class="products" src="sneakers1.png"><br><br><b>Black Sporty Set</b><br><input class="qty" type="number" value="0" id="element19"></input><a id="price">$75.00 USD</a></div></td>
+                </tr><br>
+                <tr>
+                    <td><div class="shopbox"><img class="products" src="sneakers2.png"><br><br><b>Black Running Sneakers</b><br><input class="qty" type="number" value="0" id="element20"></input><a id="price">$95.00 USD</a></div></td>
+                    <td><img id="blanks" src="blank.png"></td>
+                    <td><div class="shopbox"><img class="products" src="sneakers3.png"><br><br><b>Black Adidas Sneakers</b><br><input class="qty" type="number" value="0" id="element21"></input><a id="price">$85.00 USD</a></div></td>
+                    <td><img id="blanks" src="blank.png"></td>
+                    <td><div class="shopbox"><img class="products" src="sneakers4.png"><br><br><b>White Adidas Sneakers</b><br><input class="qty" type="number" value="0" id="element22"></input><a id="price">$80.00 USD</a></div></td>
+                </tr>
+                <tr>
+                    <td><div class="shopbox"><img class="products" src="sweater2.png"><br><br><b>Black Adidas Sweater</b><br><input class="qty" type="number" value="0" id="element25"></input><a id="price">$60.00 USD</a></div></td>
+                    <td><img id="blanks" src="blank.png"></td>
+                    <td><div class="shopbox"><img class="products" src="sweater1.png"><br><br><b>Black Sweater</b><br><input class="qty" type="number" value="0" id="element26"></input><a id="price">$45.00 USD</a></div></td>
+                    <td><img id="blanks" src="blank.png"></td>
+                    <td><div class="shopbox"><img class="products" src="set1.png"><br><br><b>Nike Gym Set</b><br><input class="qty" type="number" value="0" id="element27"></input><a id="price">$115.00 USD</a></div></td>
+                </tr>
+                <tr>
+                    <td><div class="shopbox"><img class="products" src="sweater3.png"><br><br><b>Black Adidas Hoodie</b><br><input class="qty" type="number" value="0" id="element28"></input><a id="price">$50.00 USD</a></div></td>
+                    <td><img id="blanks" src="blank.png"></td>
+                    <td><div class="shopbox"><img class="products" src="tshirt1.png"><br><br><b>Nike Black T-Shirt</b><br><input class="qty" type="number" value="0" id="element29"></input><a id="price">$25.00 USD</a></div></td>
+                    <td><img id="blanks" src="blank.png"></td>
+                    <td><div class="shopbox"><img class="products" src="tshirt2.png"><br><br><b>Nike Black T-Shirt</b><br><input class="qty" type="number" value="0" id="element30"></input><a id="price">$20.00 USD</a></div></td>
+                </tr>
+                <td><h2 id="category">Other</h2></td>
+                <tr>
+                    <td><div class="shopbox"><img class="products" src="other1.jpeg"><br><br><b>Weight Option 1</b><br><input class="qty" type="number" value="0" id="element31"></input><a id="price">$20.00 USD</a></div></td>
+                    <td><img id="blanks" src="blank.png"></td>
+                    <td><div class="shopbox"><img class="products" src="other2.jpg"><br><br><b>Weight Option 2</b><br><input class="qty" type="number" value="0" id="element32"></input><a id="price">$20.00 USD</a></div></td>
+                    <td><img id="blanks" src="blank.png"></td>
+                    <td><div class="shopbox"><img class="products" src="other3.jpg"><br><br><b>Weight Option 3</b><br><input class="qty" type="number" value="0" id="element33"></input><a id="price">$30.00 USD</a></div></td>
+                </tr>
+                <tr>
+                    <td><div class="shopbox"><img class="products" src="other4.jpeg"><br><br><b>Weight Option 4</b><br><input class="qty" type="number" value="0" id="element34"></input><a id="price">$20.00 USD</a></div></td>
+                    <td><img id="blanks" src="blank.png"></td>
+                    <td><div class="shopbox"><img class="products" src="other5.jpeg"><br><br><b>Weight Option 5</b><br><input class="qty" type="number" value="0" id="element35"></input><a id="price">$30.00 USD</a></div></td>
+                    <td><img id="blanks" src="blank.png"></td>
+                    <td><div class="shopbox"><img class="products" src="other6.jpeg"><br><br><b>Weight Option 6</b><br><input class="qty" type="number" value="0" id="element36"></input><a id="price">$40.00 USD</a></div></td>
+                </tr>
+                <tr>
+                    <td><div class="shopbox"><img class="products" src="other7.jpeg"><br><br><b>Weight Option 7</b><br><input class="qty" type="number" value="0" id="element37"></input><a id="price">30.00 USD</a></div></td>
+                    <td><img id="blanks" src="blank.png"></td>
+                    <td><div class="shopbox"><img class="products" src="other8.jpeg"><br><br><b>Weight Option 8</b><br><input class="qty" type="number" value="0" id="element38"></input><a id="price">$20.00 USD</a></div></td>
+                    <td><img id="blanks" src="blank.png"></td>
+                    <td><div class="shopbox"><img class="products" src="other9.png"><br><br><b>Weight Option 9</b><br><input class="qty" type="number" value="0" id="element39"></input><a id="price">$30.00 USD</a></div></td>
+                </tr>
+                <tr>
+                    <td><div class="shopbox"><img class="products" src="other10.jpg"><br><br><b>Soccer Ball</b><br><input class="qty" type="number" value="0" id="element40"></input><a id="price">$30.00 USD</a></div></td>
+                    <td><img id="blanks" src="blank.png"></td>
+                    <td><div class="shopbox"><img class="products" src="other11.jpg"><br><br><b>Tenis Ball</b><br><input class="qty" type="number" value="0" id="element41"></input><a id="price">$15.00 USD</a></div></td>
+                    <td><img id="blanks" src="blank.png"></td>
+                    <td><div class="shopbox"><img class="products" src="other12.webp"><br><br><b>Yoga Purple Mat</b><br><input class="qty" type="number" value="0" id="element42"></input><a id="price">$25.00 USD</a></div></td>
+                </tr>
+                <tr>
+                    <td><div class="shopbox"><img class="products" src="other13.jpeg"><br><br><b>Yoga Green Mat</b><br><input class="qty" type="number" value="0" id="element43"></input><a id="price">$25.00 USD</a></div></td>
+                    <td><img id="blanks" src="blank.png"></td>
+                    <td><div class="shopbox"><img class="products" src="other14.jpg"><br><br><b>Yoga Blue Mat</b><br><input class="qty" type="number" value="0" id="element44"></input><a id="price">$25.00 USD</a></div></td>
+                    <td><img id="blanks" src="blank.png"></td>
+                    <td><div class="shopbox"><img class="products" src="other15.jpeg"><br><br><b>Yoga Orange Mat</b><br><input class="qty" type="number" value="0" id="element45"></input><a id="price">$25.00 USD</a></div></td>
+                </tr>
+                </table><br>
+                <button id="res" onclick="total()">TOTAL :</button><h3 id="plustotal"></h3><br>
+                <button id="res" onclick="location.href='thx.html'">BUY</button>
+        
+       </div></center>
+       <script>
+function total(){
+    const e1 = parseInt(document.getElementById('element1').value);
+    const e2 = parseInt(document.getElementById('element2').value);
+    const e3 = parseInt(document.getElementById('element3').value);
+    const e4 = parseInt(document.getElementById('element4').value);
+    const e5 = parseInt(document.getElementById('element5').value);
+    const e6 = parseInt(document.getElementById('element6').value);
+    const e7 = parseInt(document.getElementById('element7').value);
+    const e8 = parseInt(document.getElementById('element8').value);
+    const e9 = parseInt(document.getElementById('element9').value);
+    const e10 = parseInt(document.getElementById('element10').value);
+    const e11 = parseInt(document.getElementById('element11').value);
+    const e12 = parseInt(document.getElementById('element12').value);
+    const e13 = parseInt(document.getElementById('element13').value);
+    const e14 = parseInt(document.getElementById('element14').value);
+    const e15 = parseInt(document.getElementById('element15').value);
+    const e16 = parseInt(document.getElementById('element16').value);
+    const e17 = parseInt(document.getElementById('element17').value);
+    const e18 = parseInt(document.getElementById('element18').value);
+    const e19 = parseInt(document.getElementById('element19').value);
+    const e20 = parseInt(document.getElementById('element20').value);
+    const e21 = parseInt(document.getElementById('element21').value);
+    const e22 = parseInt(document.getElementById('element22').value);
+    const e23 = parseInt(document.getElementById('element23').value);
+    const e24 = parseInt(document.getElementById('element24').value);
+    const e25 = parseInt(document.getElementById('element25').value);
+    const e26 = parseInt(document.getElementById('element26').value);
+    const e27 = parseInt(document.getElementById('element27').value);
+    const e28 = parseInt(document.getElementById('element28').value);
+    const e29 = parseInt(document.getElementById('element29').value);
+    const e30 = parseInt(document.getElementById('element30').value);
+    const e31 = parseInt(document.getElementById('element31').value);
+    const e32 = parseInt(document.getElementById('element32').value);
+    const e33 = parseInt(document.getElementById('element33').value);
+    const e34 = parseInt(document.getElementById('element34').value);
+    const e35 = parseInt(document.getElementById('element35').value);
+    const e36 = parseInt(document.getElementById('element36').value);
+    const e37 = parseInt(document.getElementById('element37').value);
+    const e38 = parseInt(document.getElementById('element38').value);
+    const e39 = parseInt(document.getElementById('element39').value);
+    const e40 = parseInt(document.getElementById('element40').value);
+    const e41 = parseInt(document.getElementById('element41').value);
+    const e42 = parseInt(document.getElementById('element42').value);
+    const e43 = parseInt(document.getElementById('element43').value);
+    const e44 = parseInt(document.getElementById('element44').value);
+    const e45 = parseInt(document.getElementById('element45').value);
+
+    const elmnt1 = (e1*15);
+    const elmnt2 = (e2*55);
+    const elmnt3 = (e3*25);
+    const elmnt4 = (e4*65);
+    const elmnt5 = (e5*63);
+    const elmnt6 = (e6*30);
+    const elmnt7 = (e7*50);
+    const elmnt8 = (e8*70);
+    const elmnt9 = (e9*25);
+    const elmnt10 = (e10*80);
+    const elmnt11 = (e11*45);
+    const elmnt12 = (e12*20);
+    const elmnt13 = (e13*25);
+    const elmnt14 = (e14*85);
+    const elmnt15 = (e15*25);
+    const elmnt16 = (e16*30);
+    const elmnt17 = (e17*15);
+    const elmnt18 = (e18*20);
+    const elmnt19 = (e19*75);
+    const elmnt20 = (e20*95);
+    const elmnt21 = (e21*85);
+    const elmnt22 = (e22*80);
+    const elmnt23 = (e23*75);
+    const elmnt24 = (e24*60);
+    const elmnt25 = (e25*60);
+    const elmnt26 = (e26*45);
+    const elmnt27 = (e27*115);
+    const elmnt28 = (e28*50);
+    const elmnt29 = (e29*25);
+    const elmnt30 = (e30*20);
+    const elmnt31 = (e31*20);
+    const elmnt32 = (e32*20);
+    const elmnt33 = (e33*30);
+    const elmnt34 = (e34*20);
+    const elmnt35 = (e35*30);
+    const elmnt36 = (e36*40);
+    const elmnt37 = (e37*30);
+    const elmnt38 = (e38*20);
+    const elmnt39 = (e39*30);
+    const elmnt40 = (e40*30);
+    const elmnt41 = (e41*15);
+    const elmnt42 = (e42*25);
+    const elmnt43 = (e43*25);
+    const elmnt44 = (e44*25);
+    const elmnt45 = (e45*25);
+ const add = (elmnt1+elmnt2+elmnt3+elmnt4+elmnt5+elmnt6+elmnt7+elmnt8+elmnt9+elmnt10+elmnt11+elmnt12+elmnt13+elmnt14+elmnt15+elmnt16+elmnt17+elmnt18+elmnt19+elmnt20+elmnt21+elmnt22+elmnt23+elmnt24+elmnt25+elmnt26+elmnt27+elmnt28+elmnt29+elmnt30+elmnt31+elmnt32+elmnt33+elmnt34+elmnt35+elmnt36+elmnt37+elmnt38+elmnt39+elmnt40+elmnt41+elmnt42+elmnt43+elmnt44+elmnt45);
+document.getElementById('plustotal').innerHTML = "$"+ add + " USD"
+}
+       </script>
+</body>
+</html>

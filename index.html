@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ActiveLine</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
+    <style>
+
+@media screen and (max-width:648px){
+nav{
+  display: none;
+}
+img{
+  width: 100%;
+}
+  #aboutus{
+    display: none;
+  }
+.slideshow-container{
+width: 100%;
+  }
+  .blackbox{
+    display: none;
+  }
+  .space{
+  margin: 5px;
+
+}}
+      /*Different Fonts Used in the WEBSITE*/
+        @font-face {
+            font-family:hello ;
+            src: url(Fonts/Hello.otf);
+        }
+        @font-face {
+            font-family: anything;
+            src: url(Fonts/AnythingBetter.otf);
+        }
+        @font-face {
+            font-family:baby;
+            src: url(Fonts/BabyChild.otf);
+        }
+        @font-face {
+            font-family:baligle;
+            src: url(Fonts/BaligleRegular.otf);
+        }
+        @font-face {
+            font-family:butler;
+            src: url(Fonts/Butler_Medium.otf);
+        }
+        @font-face {
+            font-family: roshida;
+            src: url(Fonts/Roshida.otf);
+        }
+        #navigation{
+          text-decoration: none; color: white; outline-color: orange;  scrollbar-color: white;
+        }
+        /*About Us Text */
+        #aboutus{
+            width:320px; height: 224px; 
+        }
+        /*Bold Letters*/
+        b{
+            font-size: 16px; font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h3{
+            font-size: 20x; font-family: Arial, Helvetica, sans-serif;
+        }
+        /*Navigation Bar*/
+        nav{
+            background-color: black; color: aliceblue; width: 750px; height: 30px; text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 20px; margin-top: 10px;
+        }
+        /*Logo*/
+        #logoal{
+            width: 75px; height: 100px;
+        }
+        /*Photos in The Main Page w Link*/
+        #mainfotos{
+        width: 340; height: 295px; border: 3px solid; text-decoration: none;  color: rgb(0, 0, 0);
+        }
+      
+        #blanks{
+            width: 25px; height: 25px;
+        }
+        #blan{
+            width: 150px; height: 150px;
+        }
+        /*Icons Top Right Corner*/
+        #icons1{
+            width: 30px; height: 30px;
+        }
+        #icons2{
+            width: 30px; height: 30px;
+        }
+        #icons3{
+            width: 30px; height: 30px;
+        }
+        /*Buttons for the Icons*/
+        button{
+            background-color: white; border: none;
+        }
+        /*Search Tab Size*/
+        input{
+            height: 30px;
+        }
+        * {box-sizing:border-box}
+/*Everything That Has to do with the slideshow*/
+.slideshow-container {
+  max-width: 750px;
+  position: relative;
+  margin: auto;
+}
+
+
+.mySlides {
+  display: none;
+}
+
+/*Previous and Next Buttons*/
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*Black Box at the Bottom*/
+.blackbox{
+  width: 1275px; height: 200px; background-color: black; color: white; font-family: Arial, Helvetica, sans-serif;
+}
+.space{
+  margin: 50px;
+}
+#feedback{
+  text-align: left;
+}
+/*Searchbar CSS*/
+#searchcateg{
+     padding:15px;
+     border-radius: 10px;
+   }
+ 
+   input[type=text] {
+      -webkit-transition: width 0.15s ease-in-out;
+      transition: width 0.15s ease-in-out;
+   }
+#list{
+  display: none;
+}
+
+    </style>
+</head>
+<body>
+  <!--Start of HTML Code-->
+    <center><table>
+        <tr>
+          <!--Navigation Bar Code-->
+            <td><img  id="logoal" src="logoact.png"><td>
+            <td><nav><a id="navigation" class="space" href="men.html">Men</a><a id="navigation" class="space" href="women.html">Women</a><a id="navigation" class="space" href="other.html">Accesories</a></nav></td>
+            <td> <input type="text" id="searchcateg" name="search" placeholder="Search Categories..."> </input><button onclick="search_product()"><img id="icons2" src="searchic.png"></button></td>
+            <td><button onclick="location.href='shopcart.html'"><img id="icons2" src="bagic.png"></button><button onclick="location.href='login.html';" value="login" ><img id="icons3" src="personic.png"></button></td></table>
+        </tr>
+        <table>
+        <tr>
+          <!--About Us Box-->
+            <td><img id="aboutus" src="aboutus.png"></td>
+            <!--Start of Slideshow container Code-->
+            <td>
+                <div class="slideshow-container">
+                
+
+                  <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="banner1.jpg" style="width:100%">
+                  </div>
+                
+                  <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="banner2.jpg" style="width:100%">
+                  </div>
+                
+                  <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="banner3.jpg" style="width:100%">
+                  </div>
+                
+                  
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+        
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span>
+                  <span class="dot" onclick="currentSlide(2)"></span>
+                  <span class="dot" onclick="currentSlide(3)"></span>
+                </div></td>
+                <!--Big Photos of the Main Page-->
+        </tr></table><br><br>
+        <table class="mainimage">
+           <a d="mainfotos" href="women.html"> <img id="mainfotos" src="1.jpg"></a><img id="blanks" src="blank.png">
+           <a d="mainfotos" href="men.html"> <img id="mainfotos" src="2.jpg"></a><img id="blanks" src="blank.png">
+           <a d="mainfotos" href="other.html"><img id="mainfotos" src="3.jpg"></a>
+        </table><br><br>
+        <!--Information Box at The End-->
+        <div class="blackbox">
+        <tr>
+          <td><br><p>ActiveLine Privacy Policy <a class="space"> </a> Copyright® owned by ActiveLine 2022 <a class="space"> </a> Based in the Dominican Republic</p></td>
+          <td><p id="feedback"><a class="space"></a><a class="space"></a>Send us feedback</p></td>
+          <td><a id="navigation" class="space" href="men.html">Menwear</a><a id="navigation" class="space"href="women.html">Womenwear</a><a id="navigation" class="space"href="other.html">Accesories</a></td>
+        </tr>
+        </div>
+        
+    </center>
+<!--Java Script for Banner-->
+    <script>
+  
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+function search_product() {
+    let searchb = document.getElementById('searchcateg').value;
+    if(searchb == "women"){
+        location.href="women.html";}
+
+        else{
+          location.href="index.html";
+        }
+        if(searchb == "men"){
+      location.href = "men.html";
+    }
+    if(searchb == "accesories"){
+      location.href = "other.html";
+    }
+      }
+ 
+
+    </script>
+</body>
+</html> 
