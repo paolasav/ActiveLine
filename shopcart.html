@@ -395,7 +395,7 @@ function total(){
     const elmnt45 = (e45*25);
  const add = (elmnt1+elmnt2+elmnt3+elmnt4+elmnt5+elmnt6+elmnt7+elmnt8+elmnt9+elmnt10+elmnt11+elmnt12+elmnt13+elmnt14+elmnt15+elmnt16+elmnt17+elmnt18+elmnt19+elmnt20+elmnt21+elmnt22+elmnt23+elmnt24+elmnt25+elmnt26+elmnt27+elmnt28+elmnt29+elmnt30+elmnt31+elmnt32+elmnt33+elmnt34+elmnt35+elmnt36+elmnt37+elmnt38+elmnt39+elmnt40+elmnt41+elmnt42+elmnt43+elmnt44+elmnt45);
 document.getElementById('plustotal').innerHTML = "$"+ add + " USD";
-    let totalmore = document.getelementById('add').value;
+    let totalmore = total();
     if (totalmore>=3000){
     document.getelementById('resutlttm').innerHTML="Your order exceed $3000 USD. You must erase some items to be able to continue the purchase."}
     else{
